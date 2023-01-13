@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="100.988">
+    <testcase classname="SignUp for PI application" name="SignUp for English language" time="100.758">
+        <system-out><![CDATA[Given Launch Pi application.................................................passed
+Given Change language and click on Sign Up..................................passed
+Then Click on checkbox term and condition...................................passed
+Then Click on continue......................................................passed
+Then Enter email id and phone number........................................passed
+Then Click on continue tap..................................................passed
+When Verify email page open.................................................passed
+Then Click on send verification code........................................passed
+Then Enter verification code................................................passed
+When Verify mobile phone page open..........................................passed
+Then Click on send verification code for mobile.............................passed
+Then Enter verification code for mobile.....................................passed
+Then Enter password and confirm password and click finish...................passed
+]]></system-out>
+    </testcase>
+</testsuite>
