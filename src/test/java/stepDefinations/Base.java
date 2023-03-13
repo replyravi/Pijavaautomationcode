@@ -7,6 +7,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 
 public class Base {
@@ -20,7 +21,10 @@ public class Base {
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "pixel_4");
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 		cap.setCapability(MobileCapabilityType.UDID, "emulator-5554");
-		cap.setCapability(MobileCapabilityType.APP, "/Users/ravi/Documents/AutomationUATBuild/pi-uat-release-automation-04-01-2023.apk");
+		//cap.setCapability(MobileCapabilityType.APP, "/Users/ravi/Documents/AutomationUATBuild/pi-uat-release-automation-10-02-2023.apk");
+		cap.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.cgs.trade");
+    	cap.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.cgs.trade.MainSplashActivity");
+	
 		
 		AndroidDriver <AndroidElement> driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
 		

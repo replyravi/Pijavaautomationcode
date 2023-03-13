@@ -1,19 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="100.988">
-    <testcase classname="SignUp for PI application" name="SignUp for English language" time="100.758">
-        <system-out><![CDATA[Given Launch Pi application.................................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="62.08">
+    <testcase classname="SignUp for PI application" name="SignUp for English language" time="61.811">
+        <failure message="An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up&#10;Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'&#10;System info: host: 'Pis-MacBook-Air.local', ip: 'fe80:0:0:0:8db:a9c0:763d:1ad6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {appActivity: com.cgs.trade.MainSplashAct..., appPackage: com.cgs.trade, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.cgs.trade.MainSplashAct..., appPackage: com.cgs.trade, automationName: UiAutomator2, deviceName: Galaxy Note9, platformName: android, platformVersion: 10.0, udid: 26c3d745ca217ece}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 26c3d745ca217ece, deviceScreenDensity: 300, deviceScreenSize: 720x1480, deviceUDID: 26c3d745ca217ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 1.875, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 45, takesScreenshot: true, udid: 26c3d745ca217ece, viewportRect: {height: 1345, left: 0, top: 45, width: 720}, warnings: {}, webStorageEnabled: false}&#10;Session ID: a3b6e212-003c-4384-bc5e-59a5bd982493&#10;*** Element info: {Using=xpath, value=//android.widget.CheckBox[@bounds='[99,544][165,610]']}" type="org.openqa.selenium.WebDriverException"><![CDATA[Given Launch Pi application.................................................passed
 Given Change language and click on Sign Up..................................passed
-Then Click on checkbox term and condition...................................passed
-Then Click on continue......................................................passed
-Then Enter email id and phone number........................................passed
-Then Click on continue tap..................................................passed
-When Verify email page open.................................................passed
-Then Click on send verification code........................................passed
-Then Enter verification code................................................passed
-When Verify mobile phone page open..........................................passed
-Then Click on send verification code for mobile.............................passed
-Then Enter verification code for mobile.....................................passed
-Then Enter password and confirm password and click finish...................passed
-]]></system-out>
+Then Click on checkbox term and condition...................................failed
+Then Click on continue......................................................skipped
+Then Enter email id and phone number........................................skipped
+Then Click on continue tap..................................................skipped
+When Verify email page open.................................................skipped
+Then Click on send verification code........................................skipped
+Then Enter verification code................................................skipped
+When Verify mobile phone page open..........................................skipped
+Then Click on send verification code for mobile.............................skipped
+Then Enter verification code for mobile.....................................skipped
+Then Enter password and confirm password and click finish...................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'Pis-MacBook-Air.local', ip: 'fe80:0:0:0:8db:a9c0:763d:1ad6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.cgs.trade.MainSplashAct..., appPackage: com.cgs.trade, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.cgs.trade.MainSplashAct..., appPackage: com.cgs.trade, automationName: UiAutomator2, deviceName: Galaxy Note9, platformName: android, platformVersion: 10.0, udid: 26c3d745ca217ece}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N960F, deviceName: 26c3d745ca217ece, deviceScreenDensity: 300, deviceScreenSize: 720x1480, deviceUDID: 26c3d745ca217ece, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 1.875, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 45, takesScreenshot: true, udid: 26c3d745ca217ece, viewportRect: {height: 1345, left: 0, top: 45, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: a3b6e212-003c-4384-bc5e-59a5bd982493
+*** Element info: {Using=xpath, value=//android.widget.CheckBox[@bounds='[99,544][165,610]']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:190)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:124)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:577)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:328)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:446)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:320)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at stepDefinations.Stepdefination.click_on_checkbox_term_and_condition(Stepdefination.java:67)
+	at ✽.Click on checkbox term and condition(file:///Users/ravi/eclipse-workspace/PIFinancialAutomation/src/test/java/features/Signup.feature:8)
+]]></failure>
     </testcase>
 </testsuite>

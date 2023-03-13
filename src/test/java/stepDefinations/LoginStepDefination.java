@@ -39,14 +39,15 @@ public class LoginStepDefination extends Loginfunction {
     	driver.manage().timeouts().implicitlyWait(250, TimeUnit.SECONDS);
     	// Click on Later on Identity Verification page
     	//driver.findElementByAndroidUIAutomator("resourceId(\"com.cgs.trade:id/btnSkip\")").click();
-    	driver.findElementByAndroidUIAutomator("text(\"Later\")").click();
+    	//driver.findElementByAndroidUIAutomator("text(\"Later\")").click();
+    	System.out.println("Dash board launched");
     }
     
     @Then("^Navigate to setting and click on logout$")
     public void navigate_to_setting_and_click_on_logout() throws Throwable {
-    	driver.manage().timeouts().implicitlyWait(250, TimeUnit.SECONDS);
+    	driver.manage().timeouts().implicitlyWait(200, TimeUnit.SECONDS);
     	
-    	//driver.findElementByAndroidUIAutomator("resourceId(\"com.cgs.trade:id/ivMenu\")").click();
+   //driver.findElementByAndroidUIAutomator("resourceId(\"com.cgs.trade:id/ivMenu\")").click();
     	driver.findElement(By.xpath ("//android.widget.ImageView[@bounds='[970,110][1036,176]']")).click();
     	
     	driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);

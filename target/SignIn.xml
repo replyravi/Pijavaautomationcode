@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="46.825">
-    <testcase classname="SignIn for PI application" name="SignIn for English language" time="46.609">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="44.478">
+    <testcase classname="SignIn for PI application" name="SignIn for English language" time="44.227">
         <system-out><![CDATA[Given Open Pi Application...................................................passed
 When Username and password show in Pi Application...........................passed
 Then Enter valid username and password......................................passed

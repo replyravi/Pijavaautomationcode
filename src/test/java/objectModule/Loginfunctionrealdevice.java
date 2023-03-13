@@ -6,10 +6,11 @@ import java.util.concurrent.TimeUnit;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import stepDefinations.Base;
+import stepDefinations.Realdevicebase;
 
-public class Loginfunction extends Base{
+public class Loginfunctionrealdevice extends Realdevicebase{
 	public AndroidDriver <AndroidElement>driver =capabilities();
-	public Loginfunction() throws MalformedURLException {
+	public Loginfunctionrealdevice() throws MalformedURLException {
 		super();
 		// TODO Auto-generated constructor stub
 	}
