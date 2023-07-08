@@ -22,7 +22,7 @@ public class OpenAccountFlow extends Loginfunction  {
 	public void login_with_pi_application() {
 	   
 	}
-	@Given("click on wallet")
+	@Given("click on wallet")// commit time 
 	public void click_on_wallet() {
 	   
 	}
